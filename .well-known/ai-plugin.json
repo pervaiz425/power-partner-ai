@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "sheet_reader",
+  "name_for_human": "Google Sheet Reader",
+  "description_for_model": "Use getSheetData() to retrieve live rows from the sheet.",
+  "description_for_human": "Read-only access to live Google Sheet data.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://your-domain.com/.well-known/openapi.yaml"
+  },
+  "logo_url": "https://your-domain.com/logo.png",
+  "contact_email": "you@example.com"
+}
