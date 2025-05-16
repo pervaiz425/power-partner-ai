@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+  title: Google Sheet Reader
+  version: '1.0.0'
+servers:
+  - url: https://script.google.com/macros/s/AKfycbxikut5LPTU656jHksTVdvtMidN5aOPytz6q66TMXwHjlfv8n6QrKsYtxpRdPKYlEBu/exec
+paths:
+  /:
+    get:
+      summary: Retrieve all rows from the Google Sheet
+      operationId: getSheetData
+      responses:
+        '200':
+          description: JSON array of sheet rows
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: array
+                  items:
+                    type: string
